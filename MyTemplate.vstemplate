@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Django_IIS_Project</Name>
+    <Description>Django Web Project with IIS support !</Description>
+    <ProjectType>Python</ProjectType>
+    <ProjectSubType>Web</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Django_IIS_Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>dj_love_iis.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.pyproj" File="Django_IIS_Project.pyproj" ReplaceParameters="true">
+      <Folder Name="Logs" TargetFolderName="Logs">
+        <ProjectItem ReplaceParameters="true" TargetFileName="readme.txt">readme.txt</ProjectItem>
+      </Folder>
+      <Folder Name="static" TargetFolderName="static">
+        <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="manage.py">manage.py</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+      
+      <!-- App -->
+      <ProjectItem ReplaceParameters="true" File="__init__.py" TargetFileName="$safeprojectname$/__init__.py">__init__.py</ProjectItem>
+      <ProjectItem ReplaceParameters="true" File="settings.py" TargetFileName="$safeprojectname$/settings.py">settings.py</ProjectItem>
+      <ProjectItem ReplaceParameters="true" File="urls.py" TargetFileName="$safeprojectname$/urls.py">urls.py</ProjectItem>
+      <ProjectItem ReplaceParameters="true" File="wsgi.py" TargetFileName="$safeprojectname$/wsgi.py">wsgi.py</ProjectItem>
+      
+      <!-- Publish script -->
+      <ProjectItem ReplaceParameters="true" TargetFileName="Publish_To_Floder_Profile.pubxml">Publish_To_Floder_Profile.pubxml</ProjectItem>      
+    </Project>
+  </TemplateContent>
+</VSTemplate>
