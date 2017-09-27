@@ -1,7 +1,6 @@
 # Django_IIS_Project_Template
 Django Visual Studio Project Template with IIS support 
 
-
 1. First ensure you had install python & pip 
 2. Install wfastcgi according to instruction described in [An IIS-Python bridge based on WSGI and FastCGI](https://pypi.python.org/pypi/wfastcgi)
 3. Download [Django_IIS_Project.zip](https://github.com/wangan/Django_IIS_Project_Template/files/1336159/Django_IIS_Project.zip)
@@ -14,5 +13,4 @@ Django Visual Studio Project Template with IIS support
 
 
 # Django 在 IIS 中运行的（Visual Studio）项目模板
-
 
